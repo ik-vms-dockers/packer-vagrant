@@ -22,8 +22,8 @@ packer-init: ## Packer init
 	@packer init -upgrade vagrant.pkr.hcl
 	@packer init -upgrade docker.pkr.hcl
 
-packer-build-vgr: ## Packer build vm
+packer-vgr: ## Packer build vm with vagrant
 	@packer build vagrant.pkr.hcl
 
-packer-build-docker: ## Packer build vm
+packer-docker: ## Packer build vm with docker
 	@packer build docker.pkr.hcl

@@ -30,3 +30,10 @@
 - [Vagrant how-to](https://github.com/hashicorp/packer-plugin-vagrant/blob/main/docs/builders/vagrant.mdx)
 - [Vagrant plugin](https://github.com/hashicorp/packer-plugin-vagrant/tree/main)
 - [Packer docker plugin](https://github.com/hashicorp/packer-plugin-docker/blob/main/docs/builders/docker.mdx)
+- [Build docker with ansible and packer](https://getbetterdevops.io/build-docker-images-using-ansible-and-packer/)
+- [Build docker with packer and ansible](https://gist.github.com/maxivak/2d014f591fc8b7c39d484ac8d17f2a55)
+- [Ansible plugin location](https://github.com/hashicorp/packer-plugin-ansible/tree/main)
+- [Packer build-in functions](https://developer.hashicorp.com/packer/docs/templates/hcl_templates/functions)
+- [Packer functions](https://developer.hashicorp.com/packer/docs/templates/hcl_templates/functions)
+- [Packer contextual variables](https://developer.hashicorp.com/packer/docs/templates/hcl_templates/contextual-variables)
+
