@@ -17,3 +17,13 @@ validate: ## Validate files with pre-commit hooks
 
 boxes: ## Vagrant boxes
 	@vagrant box list
+
+packer-init: ## Packer init
+	@packer init -upgrade vagrant.pkr.hcl
+	@packer init -upgrade docker.pkr.hcl
+
+packer-build-vgr: ## Packer build vm
+	@packer build vagrant.pkr.hcl
+
+packer-build-docker: ## Packer build vm
+	@packer build docker.pkr.hcl

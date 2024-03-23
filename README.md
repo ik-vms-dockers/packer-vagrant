@@ -27,3 +27,6 @@
 
 - [Article](https://dev.to/mattdark/a-custom-vagrant-box-with-packer-13ke)
 - [Vagrant box](https://app.vagrantup.com/generic/boxes/ubuntu2204)
+- [Vagrant how-to](https://github.com/hashicorp/packer-plugin-vagrant/blob/main/docs/builders/vagrant.mdx)
+- [Vagrant plugin](https://github.com/hashicorp/packer-plugin-vagrant/tree/main)
+- [Packer docker plugin](https://github.com/hashicorp/packer-plugin-docker/blob/main/docs/builders/docker.mdx)
