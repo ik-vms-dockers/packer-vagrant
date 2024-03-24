@@ -1,0 +1,17 @@
+---
+- name: This playbook is used to install the packages
+  hosts: any
+  become: true
+  vars_files:
+    - packages.yaml
+  tasks:
+    - name: Update the apt repository
+      apt:
+        update_cache: yes
+      become: true
+    - name: Install apt packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ apt }}"
+      become: true

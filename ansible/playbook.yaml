@@ -1,0 +1,13 @@
+---
+- hosts: default
+  connection: docker
+  # gather_facts: yes
+  tasks:
+    - name: touch
+      raw: touch /tmp/ansible-test
+    - name: echo
+      raw: echo 'test' > /tmp/ansible-test
+    - name: raw test
+      raw: date
+    - name: command test
+      command: echo "the command module"

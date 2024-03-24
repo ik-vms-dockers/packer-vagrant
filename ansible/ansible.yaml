@@ -1,0 +1,5 @@
+apt:
+  - curl
+  - wget
+  - git
+  - python3-pip

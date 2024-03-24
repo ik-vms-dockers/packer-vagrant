@@ -9,6 +9,7 @@ packer {
       source  = "github.com/hashicorp/vagrant"
       version = "~> 1"
     }
+    # https://github.com/hashicorp/packer-plugin-hashicups/tree/main
     hashicups = {
       version = "~> 1"
       source  = "github.com/hashicorp/hashicups"
@@ -48,19 +49,16 @@ build {
   # }
 
   provisioner "comment" {
-    comment = "*****Basic example to test with LATEST packer*****"
-    ui = true
+    comment     = "*****Basic example to test with LATEST packer*****"
+    ui          = true
   }
 
   provisioner "shell" {
     inline = ["echo 'Build Vagrant Box ${local.timestamp}'",
-    "echo HOST $HOST",
-    "echo UUID ${build.PackerRunUUID}",
+      "echo HOST $HOST",
+      "echo UUID ${build.PackerRunUUID}",
+      "echo $(whoami)",
+      "ls -la"
     ]
   }
-
-  # post-processor "checksum" { # checksum image
-  #   checksum_types = [ "md5", "sha512" ] # checksum the artifact
-  #   keep_input_artifact = false           # keep the artifact
-  # }
 }
