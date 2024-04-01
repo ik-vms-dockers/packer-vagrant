@@ -5,6 +5,7 @@ variable "version" {
 
 packer {
   required_plugins {
+    # https://developer.hashicorp.com/packer/integrations/hashicorp/vagrant/latest/components/builder/vagrant
     vagrant = {
       source  = "github.com/hashicorp/vagrant"
       version = "~> 1"
